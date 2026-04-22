@@ -1,0 +1,37 @@
+
+:root {
+  --rojo: #e63528;
+  --rojo-oscuro: #b52218;
+  --amarillo: #f5a623;
+  --crema: #fff8f0;
+  --oscuro: #1a1a1a;
+  --gris: #666;
+  --blanco: #ffffff;
+  --borde: #e8e8e8;
+  --sombra: 0 8px 40px rgba(0,0,0,0.12);
+  --radio: 16px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: linear-gradient(135deg, #1a1a1a 0%, #3d1500 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  padding: 18px 40px;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(8px);
+}
+
+.logo {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 1.6rem;
+  color: #f5a623;
+  text-decoration: none;
+}
+
