@@ -1,0 +1,19 @@
+:root {
+  --rojo: #e63528;
+  --rojo-oscuro: #b52218;
+  --amarillo: #f5a623;
+  --crema: #fff8f0;
+  --oscuro: #1a1a1a;
+  --gris: #555;
+  --blanco: #ffffff;
+  --sombra: 0 4px 20px rgba(0,0,0,0.12);
+  --radio: 14px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: var(--crema);
+  color: var(--oscuro);
+}
