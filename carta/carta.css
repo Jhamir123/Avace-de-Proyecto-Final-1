@@ -37,6 +37,7 @@ header h1 {
     margin-bottom: 10px;
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
     letter-spacing: 2px;
+    color: #fff;
 }
 
 header h2 {
@@ -44,11 +45,13 @@ header h2 {
     margin-bottom: 15px;
     font-weight: 400;
     opacity: 0.95;
+    color: #fff;
 }
 
 header p {
     font-size: 1.2em;
     margin: 8px 0;
+    color: #fff;
 }
 
 header hr {
@@ -58,20 +61,25 @@ header hr {
     margin: 25px 0;
 }
 
-/* MAIN */
+/* MAIN - TÍTULOS DE SECCIONES CAMBIADOS */
 main {
     padding: 40px 30px;
 }
 
 main h2 {
-    color: #ff6b35;
+    color: #2c3e50; /* 🔵 AZUL OSCURO */
     font-size: 2.2em;
     text-align: center;
     margin: 40px 0 25px 0;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-    border-bottom: 4px solid #f7931e;
-    padding-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+    border-bottom: 5px solid #ff6b35;
+    padding-bottom: 15px;
     display: inline-block;
+    background: linear-gradient(45deg, rgba(255, 107, 53, 0.1), rgba(255, 255, 255, 0.8));
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-weight: 800;
+    letter-spacing: 1px;
 }
 
 main ul {
@@ -146,6 +154,7 @@ footer p {
     font-size: 1.3em;
     margin: 12px 0;
     font-weight: 500;
+    color: #fff;
 }
 
 footer a {
@@ -188,6 +197,7 @@ footer hr {
     
     main h2 {
         font-size: 1.8em;
+        padding: 12px 20px;
     }
     
     main li {
@@ -212,5 +222,9 @@ footer hr {
     
     header h1 {
         font-size: 2em;
+    }
+    
+    main h2 {
+        font-size: 1.5em;
     }
 }
