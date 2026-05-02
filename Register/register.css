@@ -1,15 +1,12 @@
-
 :root {
   --rojo: #e63528;
   --rojo-oscuro: #b52218;
   --amarillo: #f5a623;
-  --crema: #fff8f0;
   --oscuro: #1a1a1a;
   --gris: #666;
   --blanco: #ffffff;
   --borde: #e8e8e8;
   --sombra: 0 8px 40px rgba(0,0,0,0.12);
-  --radio: 16px;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -22,7 +19,11 @@ body {
   flex-direction: column;
 }
 
+/* NAVBAR */
 .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 18px 40px;
   background: rgba(0,0,0,0.4);
   backdrop-filter: blur(8px);
@@ -31,10 +32,36 @@ body {
 .logo {
   font-family: 'Abril Fatface', cursive;
   font-size: 1.6rem;
-  color: #f5a623;
+  color: var(--amarillo);
   text-decoration: none;
 }
 
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active { color: var(--amarillo); }
+
+.btn-nav {
+  background: var(--rojo) !important;
+  color: var(--blanco) !important;
+  padding: 7px 18px;
+  border-radius: 30px;
+}
+
+/* AUTH */
 .auth-wrapper {
   flex: 1;
   display: flex;
@@ -52,16 +79,9 @@ body {
   box-shadow: var(--sombra);
 }
 
-.auth-header {
-  text-align: center;
-  margin-bottom: 32px;
-}
+.auth-header { text-align: center; margin-bottom: 32px; }
 
-.auth-icon {
-  font-size: 3rem;
-  display: block;
-  margin-bottom: 12px;
-}
+.auth-icon { font-size: 3rem; display: block; margin-bottom: 12px; }
 
 .auth-header h2 {
   font-family: 'Abril Fatface', cursive;
@@ -70,14 +90,10 @@ body {
   margin-bottom: 8px;
 }
 
-.auth-header p {
-  color: var(--gris);
-  font-size: 0.95rem;
-}
+.auth-header p { color: var(--gris); font-size: 0.95rem; }
 
-.form-group {
-  margin-bottom: 18px;
-}
+/* FORM */
+.form-group { margin-bottom: 18px; }
 
 .form-group label {
   display: block;
@@ -96,8 +112,8 @@ body {
   font-size: 0.95rem;
   color: var(--oscuro);
   background: #fafafa;
-  transition: border-color 0.2s, box-shadow 0.2s;
   outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 .form-group input:focus {
@@ -127,10 +143,7 @@ body {
   margin-top: 8px;
 }
 
-.btn-submit:hover {
-  background: var(--rojo-oscuro);
-  transform: translateY(-2px);
-}
+.btn-submit:hover { background: var(--rojo-oscuro); transform: translateY(-2px); }
 
 .auth-footer {
   text-align: center;
@@ -139,12 +152,7 @@ body {
   color: var(--gris);
 }
 
-.auth-footer a {
-  color: var(--rojo);
-  font-weight: 700;
-  text-decoration: none;
-}
-
+.auth-footer a { color: var(--rojo); font-weight: 700; text-decoration: none; }
 .auth-footer a:hover { text-decoration: underline; }
 
 @media (max-width: 480px) {
